@@ -1,0 +1,24 @@
+version: "3"
+services:
+        mysql_node-1:
+                container_name: mysql-node-1
+                restart: always
+                build: 
+                ports: 
+                        ["3301:3306"]
+
+        mysql_node-2:
+                container_name: mysql-node-2
+                restart: always 
+                build:
+                ports:
+                        ["3302:3306"]
+
+        mysql_node-3:
+                container_name: mysql-node-2
+                restart: always
+                build:
+                ports:
+                        ["3303:3306"]
+                        
+
